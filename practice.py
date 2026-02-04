@@ -106,8 +106,14 @@ def add_task(task: Task) -> bool:
         True
     """
     # TODO: Student 3 - Implement this function
+    for item in _tasks:
+        if task.id == item.id:
+            return False
+
+    _tasks.append(task)
+    return True
     # Hint: Check if task["id"] already exists in _tasks before adding
-    raise NotImplementedError("Student 3: Implement add_task()")
+    # raise NotImplementedError("Student 3: Implement add_task()")
 
 
 # --------------------------------------------------------------------------
