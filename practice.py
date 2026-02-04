@@ -107,7 +107,7 @@ def add_task(task: Task) -> bool:
     """
     # TODO: Student 3 - Implement this function
     for item in _tasks:
-        if task.id == item.id:
+        if task["id"] == item["id"]:
             return False
 
     _tasks.append(task)
