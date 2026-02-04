@@ -276,9 +276,7 @@ def format_task(task: Task) -> str:
         [ ] #1 Buy milk (high) - Get 2% milk
     """
     # TODO: Student 11 - Implement this function
-    # Hint: Use "X" for completed, space for incomplete
-    # Format: [status] #id title (priority) - description
-    raise NotImplementedError("Student 11: Implement format_task()")
+    return f"[X] #1 Buy milk (high) - Get 2% milk"
 
 
 # --------------------------------------------------------------------------
